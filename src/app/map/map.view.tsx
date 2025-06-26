@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css'
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
 import 'leaflet-defaulticon-compatibility'
 import { MapContainer, TileLayer, useMap, useMapEvent } from 'react-leaflet'
+import MapMarkers from './map.markers';
 
 const customCRS = L.CRS.Simple;
 
@@ -76,7 +77,8 @@ const MapView = () => {
                     tms={false} 
                 />
                 <MapBoundsSetter />
-                        <ZoomConstraintEnforcer minZoom={MAP_MIN_ZOOM} maxZoom={MAP_MAX_ZOOM} />
+                <ZoomConstraintEnforcer minZoom={MAP_MIN_ZOOM} maxZoom={MAP_MAX_ZOOM} />
+                <MapMarkers />
             </MapContainer>
         </div>
     )

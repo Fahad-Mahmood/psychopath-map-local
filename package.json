@@ -15,6 +15,7 @@
     "@types/proj4": "^2.5.5",
     "@types/proj4leaflet": "^1.0.10",
     "axios": "^1.8.1",
+    "dayjs": "^1.11.13",
     "framer-motion": "^11.15.0",
     "leaflet": "^1.9.4",
     "leaflet-custom-headers": "^1.0.3",
