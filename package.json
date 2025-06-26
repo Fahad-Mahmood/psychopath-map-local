@@ -1,0 +1,46 @@
+{
+  "name": "psychopath-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/button": "^2.2.7",
+    "@nextui-org/system": "^2.4.4",
+    "@nextui-org/theme": "^2.4.3",
+    "@types/proj4": "^2.5.5",
+    "@types/proj4leaflet": "^1.0.10",
+    "axios": "^1.8.1",
+    "framer-motion": "^11.15.0",
+    "leaflet": "^1.9.4",
+    "leaflet-custom-headers": "^1.0.3",
+    "leaflet-defaulticon-compatibility": "^0.1.2",
+    "leaflet-draw": "^1.0.4",
+    "next": "^15.1.4",
+    "proj4": "^2.15.0",
+    "proj4leaflet": "^1.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "react-leaflet": "^5.0.0",
+    "react-leaflet-draw": "^0.20.4",
+    "react-toastify": "^11.0.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@svgr/webpack": "^8.1.0",
+    "@types/leaflet": "^1.9.15",
+    "@types/node": "^20.17.10",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
