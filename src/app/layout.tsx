@@ -29,7 +29,7 @@ const RootLayout = async ({
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} ${poppins.className}  antialiased `}
+                className={`bg-[#330000] ${geistSans.variable} ${geistMono.variable} ${poppins.className}  antialiased `}
             >
                 {children}
             </body>

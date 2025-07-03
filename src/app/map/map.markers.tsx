@@ -132,20 +132,21 @@ const MapMarkers = () => {
         ]
     }, [map])
 
-    useEffect(() => {
-        const handleMessage = (event: MessageEvent) => {
-            const data = event.data
-            if (data?.attractions) {
-                setAttractionsList(data.attractions)
-            }
+useEffect(() => {
+    const handleMessage = (event: CustomEvent) => {
+        const data = event.detail
+        if (data?.attractions) {
+            setAttractionsList(data.attractions)
         }
+    }
 
-        window.addEventListener('message', handleMessage)
-        
-        return () => {
-            window.removeEventListener('message', handleMessage)
-        }
-    }, [])
+    window.addEventListener('reactNativeData', handleMessage as EventListener)
+    
+    return () => {
+        window.removeEventListener('reactNativeData', handleMessage as EventListener)
+    }
+}, [])
+
 
     const stageShow = { id: 12, name: 'StageShow', position: [-106.875, 177.1875], times: ['6pm-7pm', '8pm-9pm'] };
 
