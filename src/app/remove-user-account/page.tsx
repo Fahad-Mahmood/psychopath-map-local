@@ -78,7 +78,7 @@ export default function RemoveAccountPage() {
             {/* Footer */}
             <footer className="border-t border-gray-800 mt-16">
                 <div className="max-w-5xl mx-auto px-6 py-8 text-center text-gray-500">
-                    <p>&copy; 2024 PsychoPath. All rights reserved.</p>
+                    <p>&copy; 2025 PsychoPath. All rights reserved.</p>
                     <div className="mt-4 space-x-6">
                         <a href="https://www.psycho-path.co.uk/privacy-policy/" className="hover:text-red-600">Privacy Policy</a>
                         <a href="#" className="hover:text-red-600">Terms of Service</a>
