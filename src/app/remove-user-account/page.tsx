@@ -10,8 +10,8 @@ export default function RemoveAccountPage() {
         <div className={`min-h-screen text-gray-300 ${rokkitt.className}`} style={{backgroundColor: '#111'}}>
             {/* Header */}
             <header className="border-b border-gray-800">
-                <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-                    <Image src={logo} alt="PsychoPath Logo" className="h-32 w-auto" />
+                <div className="max-w-5xl mx-auto px-6 py-2 flex justify-between items-center">
+                    <Image src={logo} alt="PsychoPath Logo" className="h-24 w-auto" />
                 </div>
             </header>
 
