@@ -1,35 +1,19 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Marker, useMap } from 'react-leaflet'
 import L from 'leaflet'
-import dayjs from 'dayjs'
 
 interface Attraction {
     attractionId: number
     attractionName: string
     attractionDescription: string
     waitingTime: string
+    waitingTimeMinutes: number
     createdAt: string
     updatedAt: string
     classicPrice: number
     premiumPrice: number
     classicPriceId: string
     premiumPriceId: string
-}
-
-const calculateWaitingTime = (waitingTime?: string) => {
-    if (!waitingTime) return 0
-    const currentDate = dayjs()
-    const waitingTimeDate = dayjs(waitingTime)
-    
-    if (!waitingTimeDate.isValid()) {
-        return 0
-    }
-
-    const difference = waitingTimeDate.diff(currentDate, 'minutes')
-    if (difference < 0) {
-        return 0
-    }
-    return difference
 }
 
 // const MapClickHandler = () => {
@@ -160,7 +144,7 @@ useEffect(() => {
             />
             {markersData.map((marker) => {
                 const attraction = attractionsList?.find(a => a.attractionId === marker.id)
-                const calculatedWaitingTime = attraction ? calculateWaitingTime(attraction.waitingTime) : marker.waitingTime
+                const calculatedWaitingTime = attraction ? attraction.waitingTimeMinutes : marker.waitingTime
                 
                 return (
                     <Marker
