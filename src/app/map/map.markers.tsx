@@ -144,7 +144,7 @@ useEffect(() => {
             />
             {markersData.map((marker) => {
                 const attraction = attractionsList?.find(a => a.attractionId === marker.id)
-                const calculatedWaitingTime = attraction ? attraction.waitingTimeMinutes : marker.waitingTime
+                const calculatedWaitingTime = attraction ? (attraction.waitingTimeMinutes ?? 0) : (marker.waitingTime ?? 0)
                 
                 return (
                     <Marker
