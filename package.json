@@ -21,7 +21,7 @@
     "leaflet-custom-headers": "^1.0.3",
     "leaflet-defaulticon-compatibility": "^0.1.2",
     "leaflet-draw": "^1.0.4",
-    "next": "^15.1.4",
+    "next": "^16.2.6",
     "proj4": "^2.15.0",
     "proj4leaflet": "^1.0.2",
     "react": "^19.0.0",
