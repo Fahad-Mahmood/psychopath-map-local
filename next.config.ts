@@ -8,9 +8,6 @@ const nextConfig: NextConfig = {
                 as: '*.js',
             },
         },
-    },
-    eslint: {
-        ignoreDuringBuilds: true
     }
 }
 
